@@ -2,6 +2,9 @@
 
 namespace reverse_string {
 
-// TODO: add your solution here
+std::string reverse_string(std::string subject) {
+    std::reverse(subject.begin(), subject.end());
+    return subject;
+}
 
 }  // namespace reverse_string
