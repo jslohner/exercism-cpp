@@ -1,7 +1,8 @@
 #pragma once
 
+#include <cstdint>
+
 namespace grains {
-
-// TODO: add your solution here
-
+    std::uint64_t square(int s_num);
+    std::uint64_t total();
 }  // namespace grains
