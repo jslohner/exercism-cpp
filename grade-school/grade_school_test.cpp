@@ -88,4 +88,4 @@ TEST_CASE("checking_a_grade_should_not_change_the_roster") {
     REQUIRE(school_.roster().empty());
 }
 
-#endif
+// #endif
