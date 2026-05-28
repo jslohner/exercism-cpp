@@ -1,7 +1,10 @@
 #pragma once
+#include <iostream>
+#include <map>
+#include <vector>
 
 namespace sieve {
 
-// TODO: add your solution here
+    const std::vector<int> primes(int n);
 
 }  // namespace sieve
