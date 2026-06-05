@@ -56,3 +56,6 @@ CMakeUserPresets.json
 
 # system
 .DS_Store
+
+# vscode
+.vscode
