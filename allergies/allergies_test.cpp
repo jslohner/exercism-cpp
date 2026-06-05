@@ -10,12 +10,13 @@ TEST_CASE("testing for eggs allergy -> not allergic to anything",
     REQUIRE(false == allergies::allergy_test(0).is_allergic_to("eggs"));
 }
 
-#if defined(EXERCISM_RUN_ALL_TESTS)
+// #if defined(EXERCISM_RUN_ALL_TESTS)
 
 TEST_CASE("testing for eggs allergy -> allergic only to eggs",
           "[07ced27b-1da5-4c2e-8ae2-cb2791437546]") {
     REQUIRE(true == allergies::allergy_test(1).is_allergic_to("eggs"));
 }
+// #if defined(EXERCISM_RUN_ALL_TESTS)
 
 TEST_CASE("testing for eggs allergy -> allergic to eggs and something else",
           "[5035b954-b6fa-4b9b-a487-dae69d8c5f96]") {
@@ -287,4 +288,4 @@ TEST_CASE("list when: -> no allergen score parts without highest valid score",
     REQUIRE(expected == allergies::allergy_test(257).get_allergies());
 }
 
-#endif
+// #endif
