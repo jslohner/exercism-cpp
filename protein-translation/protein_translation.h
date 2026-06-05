@@ -1,9 +1,15 @@
 #pragma once
-#include <iostream>
+#include <map>
 #include <string>
 #include <vector>
 
+using namespace std;
+
+using acid = string;
+using codon = string;
+using peptide = vector<string>;
+
 namespace protein_translation {
-    std::string get_protein(std::string codon);
-    std::vector<std::string> proteins(std::string seq);
+    extern std::map<codon, acid> amino_acids;
+    peptide proteins(string rna);
 }  // namespace protein_translation
