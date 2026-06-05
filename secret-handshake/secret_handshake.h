@@ -1,7 +1,9 @@
 #pragma once
+#include <string>
+#include <vector>
+
+using namespace std;
 
 namespace secret_handshake {
-
-// TODO: add your solution here
-
+    vector<string> commands(int n);
 }  // namespace secret_handshake
