@@ -23,7 +23,7 @@ TEST_CASE("date only specification of time",
     REQUIRE(expected == actual);
 }
 
-#if defined(EXERCISM_RUN_ALL_TESTS)
+// #if defined(EXERCISM_RUN_ALL_TESTS)
 TEST_CASE("second test for date only specification of time",
           "[6d86dd16-6f7a-47be-9e58-bb9fb2ae1433]") {
     const auto actual =
@@ -58,4 +58,4 @@ TEST_CASE("full time with day roll-over",
     const ptime expected(time_from_string("2046-10-03 01:46:39"));
     REQUIRE(expected == actual);
 }
-#endif
+// #endif
