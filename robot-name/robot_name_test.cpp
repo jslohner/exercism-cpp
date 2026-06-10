@@ -7,6 +7,7 @@
 #include <cctype>
 #include <string>
 #include <unordered_set>
+#include<iostream>
 
 using namespace std;
 
@@ -23,11 +24,12 @@ static bool validate_name(const string& name) {
 
 TEST_CASE("has_a_name") {
     const robot_name::robot robot;
+    cout<<robot.name()<<endl;
 
     REQUIRE(validate_name(robot.name()));
 }
 
-#if defined(EXERCISM_RUN_ALL_TESTS)
+// #if defined(EXERCISM_RUN_ALL_TESTS)
 TEST_CASE("name_is_the_same_each_time") {
     const robot_name::robot robot;
 
@@ -62,4 +64,4 @@ TEST_CASE("exhausting_digits_yields_different_names") {
         names.insert(robot.name());
     }
 }
-#endif
+// #endif
